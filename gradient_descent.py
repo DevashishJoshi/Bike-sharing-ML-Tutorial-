@@ -4,7 +4,6 @@ py -3 gradient_descent.py
 '''
 from sklearn.metrics import r2_score
 from prereq import gradDesc
-#from sklearn.model_selection import train_test_split
 import pandas as pd, numpy as np, matplotlib.pyplot as p
 
 #Read the data from csv files
@@ -30,7 +29,6 @@ Xtrain = X[:train_size]
 Xtest = X[train_size:]
 ytrain = y[:train_size]
 ytest = y[train_size:]
-#Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, random_state=3, train_size=train_size, test_size=m-train_size)
 
 #Initialize theta for gradient descent
 theta = pd.DataFrame([[0]*n]*1)
